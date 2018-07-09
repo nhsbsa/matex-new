@@ -21,6 +21,37 @@
 
  Content goes here
 
+ <!-- Request Assessed -->
+					 	<div class="form-group">
+							<fieldset class="inline">
+	            				<legend class="visually-hidden">Has this request been assessed before?</legend>
+			                    <span class="form-label-bold">
+			     			        Has this request been assessed before?
+			            		</span>
+			        	        <p>Click yes if this is a revision of a previous request that failed its assessment</p>
+			       				
+			       				<div class="multiple-choice" data-target="yes-assessed-code">
+			       					<input type="radio" id="yes-assessed-before" value="true" aria-required="true" required="required"/>
+			       					<label class="form-label" id="yes-assessed-before-label" for="yes-assessed-before">Yes</label>
+			     				</div>
+			     				
+			     				<div class="multiple-choice">
+			     					<input type="radio" id="no-assessed-before" value="false" />
+			     					<label class="form-label" id="no-assessed-before-label" for="no-assessed-before">No</label>
+						 		</div>
+						 		
+						 		<div class="panel panel-border-narrow js-hidden" id="yes-assessed-code">
+	        						<label class="form-label-bold" id="previous-rfia-number-label" for="previous-rfia-number">Previous PIP/RFIA number</label>
+									 
+									 <p>This is the unique identifier assigned to the request</p>
+			         
+			         				<input class="form-control" id="previous-rfia-number"  name="previous-rfia-number" type="text" maxlength="40" />
+	      						</div>
+						 		
+		             		</fieldset>	
+					 	</div>
+					 	<!-- End -->
+
   
   </div>
 
