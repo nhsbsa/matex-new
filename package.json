@@ -10,8 +10,6 @@
     "start": "node start.js",
     "lint": "standard",
     "test": "gulp test && npm run lint"
-    "sass": "node-sass sass/main.scss --output public/css",
-"sass:watch": "nodemon -e scss -x \"npm run sass\""
   },
   "dependencies": {
     "basic-auth": "^1.0.3",
