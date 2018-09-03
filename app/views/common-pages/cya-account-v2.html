@@ -1,0 +1,119 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Help paying for NHS Costs prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
+<main id="content" role="main">
+	<div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
+      </p>
+  	</div>
+  	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+        </div>
+    </div>
+
+  	<div class="grid-row">
+  		<div class="column-two-thirds">
+  			<div class="form">
+		  		<form id="appform" role="form" method="post">
+		  			<fieldset>
+					    <h1 class="heading-large">
+          					<span class="heading-secondary">Create a new NHS registered account</span>
+       						Check your answers
+      					</h1>
+
+					    <!-- only add a heading for a list if there is more than one list -->
+
+				    	<!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+				    	<!--   * `cya-questions-short` for short questions -->
+				    	<!--   * `cya-questions-long` for long questions -->
+				    	<!--   * none for single group of q&a -->
+				    	
+				    	<dl class="govuk-check-your-answers cya-questions-short">
+				        	<div>
+				          		<dt class="cya-question">
+				            		Email address
+				          		</dt>
+					        	<dd class="cya-answer">
+					            	yourname@example.com
+					          	</dd>
+				          		<dd class="cya-change">
+				            		<a href="https://matex-new.herokuapp.com/common-pages/create-account">
+				              			Change<span class="visually-hidden"> Email address</span>
+				            		</a>
+				          		</dd>
+				        	</div>
+				        </dl>
+				        <dl class="govuk-check-your-answers cya-questions-short">
+				        	<div>
+				          		<dt class="cya-question">
+				            		Telephone number
+				          		</dt>
+					        	<dd class="cya-answer">
+					            	00000000001
+					          	</dd>
+				          		<dd class="cya-change">
+				            		<a href="https://matex-new.herokuapp.com/common-pages/create-account">
+				              			Change<span class="visually-hidden">Telephone number</span>
+				            		</a>
+				          		</dd>
+				        	</div>
+				        </dl>
+						<dl class="govuk-check-your-answers cya-questions-short">
+        					<div>
+          						<dt class="cya-question cya-questions-long">
+            						Primary Care oganisation
+          						</dt>
+          						<dd class="cya-answer">
+            						Example CCG
+          						</dd>
+          						<dd class="cya-change">
+            						<a href="https://matex-new.herokuapp.com/common-pages/create-account">
+            							Change<span class="visually-hidden"> Primary Care oganisation</span>
+            						</a>
+          						</dd>
+        					</div>
+
+        					<div>
+          						<dt class="cya-question cya-questions-long">
+            						NMC or GMC number
+          						</dt>
+         						<dd class="cya-answer">
+            						123
+          						</dd>
+          						<dd class="cya-change">
+            						<a href="https://matex-new.herokuapp.com/common-pages/create-account">
+              							Change<span class="visually-hidden"> NMC or GMC number</span>
+            						</a>
+          						</dd>
+        					</div>
+
+        				</dl>	
+
+
+     					<h2 class="heading-medium">Now register to use this service.</h2>
+
+      					<p class="text">
+        					By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      					</p>
+
+      					<div class="form-group">
+        					<a href="done" class="button">Accept and register</a>
+      					</div>
+					</fieldset>
+				</form>	
+			</div>
+ 		</div>
+	</div>
+</main>
+
+{% endblock %}
+
+

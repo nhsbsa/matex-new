@@ -1,0 +1,59 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Help paying for NHS Costs prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
+<main id="content" role="main">
+	<div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
+      </p>
+  	</div>
+  	<div class="grid-row">
+    	<div class="column-full">
+  			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+	    </div>
+    </div>
+
+  	<div class="grid-row">
+  		<div class="column-two-thirds">
+  			<div class="form">
+		  		<form id="appform" role="form" method="post">
+		  			<fieldset>
+					    <h1 class="heading-large">
+					    	<span class="heading-secondary">Register to use this service</span>
+					    	About you
+					    </h1>
+
+					    <div class="form-group">
+					    	<label class="form-label" for="email-ad" id="first-name-label">Email address</label>
+					    	<p>Your email address will become your username</p>
+					    	<input id="email-ad" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
+					    </div>
+
+			    		<div class="form-group">
+					    	<label class="form-label" for="care" id="care-label">Primary Care organisation</label>
+					    	<input id="care" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
+					    </div>	
+
+					    <div class="form-group">
+					    	<label class="form-label" for="ident-number" id="ident-number-label">NMC or GMC number</label>
+					    	<input id="ident-number" class="form-control" max-length="30" autocomplete="off" aria-required="false">
+					    </div>
+            		</fieldset>
+				</form>	
+				<div class="form-group">
+          			<a class="button" href="create-account-cya" id="next">Continue</a>
+        		</div>    
+			</div>
+ 		</div>
+	</div>
+</main>
+
+{% endblock %}
+
+
