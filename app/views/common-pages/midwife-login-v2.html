@@ -1,0 +1,76 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Help paying for NHS Costs prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
+<main id="content" role="main">
+	<div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
+      </p>
+  	</div>
+  	<div class="grid-row">
+    	<div class="column-full">
+  			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+  		</div>
+    </div>
+
+  	<div class="grid-row">
+  		<div class="column-two-thirds">
+  			<div class="form">
+		  		<form id="appform" role="form" method="post">
+		  			<fieldset>
+					    <h1 class="heading-large">
+					    	<span class="heading-secondary">Apply for a maternity exemption certificate</span>
+					    	Sign in
+					    </h1>
+
+					    <!--<p>If you work for or on behalf of the NHS you can <a href="/common-pages/create-account">create an NHS registered account</a> if you don't have one.</p> --> 
+					   
+					   <!-- <details class="details-login" role="group">
+				            <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Keep your account secure</span></summary>
+				            <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+				              <p>Help keep your account secure by:</p>
+				              <ul class="list list-bullet">
+				                <li>not saving usernames and passwords on your computer or browser</li>
+				                <li>not sharing account details with other people</li>
+				                <li>making sure nobody is watching while you sign in</li>
+				                <li>signing out after finishing applications</li>
+				              </ul>
+				            </div>
+				          </details> -->
+				        
+					    <div class="form-group">
+					    	<label class="form-label-bold" for="email-ad" id="first-name-label">Email address</label>
+					    	<input id="email-ad" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
+					    </div>
+
+				   		<div class="form-group">
+				    		<label class="form-label-bold" for="Last-name" id="Last-name-label">Password</label>
+					    	<input id="Last-name" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
+					    </div>
+
+					</fieldset>    
+				</form>	
+				<div class="form-group">
+          			<a class="button" href="apply-page" id="next">Sign in</a>
+        		</div>    
+
+        		<h2 class="heading-medium">Problems signing in?</h2>
+        		<ul class="action-list">
+        			<li>
+        				<a href="/common-pages/forgotten-password">Forgotten Password</a>
+        			</li>
+        		</ul>
+			</div>
+ 		</div>
+	</div>
+</main>
+
+{% endblock %}
+
+
