@@ -29,7 +29,7 @@
 					    </h1>
 					    <div class="form-group">
 							<div class="multiple-choice">
-					        	<input id="radio-1" type="radio" name="radio-group" value="Isle of Man or the Channel Islands" onclick="showSign();">
+					        	<input id="radio-1" type="radio" name="radio-group" value="Isle of Man or the Channel Islands" onclick="showSign(); hideNew();">
 					        	<label for="radio-1" style="padding:10px;">Sign in with your matex account
 					        		<span class="form-hint">
             							If you are already registered for this service you can sign in to apply for maternity exemption certificates. 
@@ -38,7 +38,7 @@
 							</div>
 					      	<p class="form-block">or</p>
 					      	<div class="multiple-choice">
-					        	<input id="radio-2" type="radio" name="radio-group" value="I am a British citizen living abroad" onclick="hideSign();">
+					        	<input id="radio-2" type="radio" name="radio-group" value="I am a British citizen living abroad" onclick="hideSign(); showNew();">
 					        	<label for="radio-2" style="padding:10px;">I don't have an account
 					        		<span class="form-hint">
             							You must be a midwife who is registered with NMC/GNC to create an account. 
@@ -63,14 +63,17 @@
 		document.getElementById('already-registered').style.display = "block";
 	}
 
+	function hideNew() {
+		document.getElementById('new-account').style.display = 'none';
+	}
 
 	function hideSign() {
 		document.getElementById('already-registered').style.display = 'none';
 	}
 
-	/*function showNew() {
-		document.getElementById('already-registered').classList.remove('visuallyhidden');
-	}*/
+	function showNew() {
+		document.getElementById('new-account').style.display = 'block';
+	
 </script>
 
 </main>
