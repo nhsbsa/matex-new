@@ -1,0 +1,39 @@
+{% extends "layout_bsa.html" %}
+ 
+{% block page_title %}
+  NHSBSA Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service 
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p> 
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="javascript:history.go(-1)" class="link-back">Back</a>
+      <span style="float:right; font-size:16px; margin-top: 30px;">
+        <span style="margin-right:10px;">Alice Aardvark (AAAA1111)</span>   <a href="/common-pages/start-v6" style="margin-right:10px;">Sign out</a>   |   <a href="#" style="margin-left:10px">Help</a>
+      </span> 
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="done-panel">
+        <h1 class="heading-xlarge"><span id="done-tick"></span>Done</h1>
+        <h2 class="heading-large"><span class="heading-secondary" style="color: white;">You have completed the application</span></h2>
+      </div>
+      <h2 class="heading-medium">What happens next</h2>
+      <p>A link will be emailed to the mother within 24 hours to enable the completion of the application form.</p>
+      <h3 class="heading-small">Ongoing feedback from mothers</h3>
+      <p>If the mother is happy to take part in further research, <a href="https://www.snapsurveys.com/wh/s.asp?k=148104480648&application=matex-hcp-app&version=0.1.1.49&ref=CURq--hqDdTtkurudfgkEAMRkhysggIg2DNRzTBfcXQ" target="blank">send us a contact number (link opens in a new window)</a>.</p>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
