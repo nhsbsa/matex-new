@@ -32,15 +32,15 @@
 						<fieldset class="inline">
 				    		<legend class="visually-hidden">Is the mother present?</legend>
 
-				    		<div class="multiple-choice">
+				    		<div class="multiple-choice" onclick="hideDate();">
 				        		<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
 					        	<label for="radio-inline-1">Yes</label>
 					      	</div>
-					      	<div class="multiple-choice">
+					      	<div class="multiple-choice" onclick="showDate();">
 					        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
 				        		<label for="radio-inline-2">No</label>
 				      		</div>
-				      		<div class="panel panel-border-narrow">
+				      		<div class="panel panel-border-narrow" id="date-you-met" style="display:none;">
 								<label for="motherInterviewDate" class="form-label-bold">Date you met with the mother
 										<span class="form-hint">For example, 01/03/2018</span>
 								</label>
@@ -55,6 +55,23 @@
 			</div>		
  		</div>
 	</div>
+	<script>
+	function showDate() {
+		document.getElementById('date-you-met').style.display = "block";
+	}
+
+	function hideDate() {
+		document.getElementById('date-you-met').style.display = 'none';
+	}
+	/*
+	function hideSign() {
+		document.getElementById('already-registered').style.display = 'none';
+	}
+
+	function showNew() {
+		document.getElementById('new-account').style.display = 'block';
+	}*/
+</script>
 </main>
 
 {% endblock %}
