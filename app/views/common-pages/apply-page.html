@@ -1,0 +1,61 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Help paying for NHS Costs prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
+<main id="content" role="main">
+	<div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
+      </p>
+  	</div>
+  	<div class="grid-row">
+    	<div class="column-full">
+  			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+  		</div>
+    </div>
+
+  	<div class="grid-row">
+  		<div class="column-two-thirds">
+  			<div class="form">
+		  		<h1 class="heading-large">
+					<span class="heading-secondary">Apply for a maternity exemption certificate</span>
+					Is the mother present?
+			    </h1>
+
+			    <form id="appform" role="form" method="post">
+					<div class="form-group">
+						<fieldset class="inline">
+				    		<legend class="visually-hidden">Is the mother present?</legend>
+				    		<div class="multiple-choice">
+				        		<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+					        	<label for="radio-inline-1">Yes</label>
+					      	</div>
+					      	<div class="multiple-choice">
+					        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+				        		<label for="radio-inline-2">No</label>
+				      		</div>
+				      		<div class="panel panel-border-narrow">
+								<label for="motherInterviewDate" class="form-label-bold">Date you met with the mother
+									<span class="form-hint">For example, 01/03/2018</span>
+								</label>
+								<input id="motherInterviewDate" type="text" class="form-control date" name="motherInterviewDate" autocomplete="off" value="">
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-group">
+          				<a class="button" href="/common-pages/start-v6" id="next">Continue</a>
+        			</div>  
+				</form>
+			</div>		
+ 		</div>
+	</div>
+</main>
+
+{% endblock %}
+
+
