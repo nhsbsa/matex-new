@@ -30,17 +30,22 @@
 			    <form id="appform" role="form" method="post">
 					<div class="form-group">
 						<fieldset class="inline">
+				    		<legend class="visually-hidden">Is the mother present?</legend>
 
-			    		<legend class="visually-hidden">Is the mother present?</legend>
-
-			    		<div class="multiple-choice">
-			        		<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-				        	<label for="radio-inline-1">Yes</label>
-				      	</div>
-				      	<div class="multiple-choice">
-				        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-			        		<label for="radio-inline-2">No</label>
-			      		</div>
+				    		<div class="multiple-choice">
+				        		<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+					        	<label for="radio-inline-1">Yes</label>
+					      	</div>
+					      	<div class="multiple-choice">
+					        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+				        		<label for="radio-inline-2">No</label>
+				      		</div>
+				      		<div class="panel panel-border-narrow">
+								<label for="motherInterviewDate" class="form-label-bold">Date you met with the mother
+										<span class="form-hint">For example, 01/03/2018</span>
+								</label>
+								<input id="motherInterviewDate" type="text" class="form-control date" name="motherInterviewDate" autocomplete="off" value="">
+							</div>
 						</fieldset>
 					</div>
 					<div class="form-group">
