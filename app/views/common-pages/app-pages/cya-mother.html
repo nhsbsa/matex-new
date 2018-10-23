@@ -1,0 +1,147 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Help paying for NHS Costs prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
+<main id="content" role="main">
+  <div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
+      </p>
+    </div>
+    <div class="grid-row">
+    <div class="column-full">
+      <a href="javascript:history.go(-1)" class="link-back">Back</a>
+        </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <div class="form">
+          <form id="appform" role="form" method="post">
+            <fieldset>
+              <h1 class="heading-large">
+                <span class="heading-secondary">Apply for a maternity exemption certificate</span>
+                  Check your answers
+              </h1>
+
+              <!-- only add a heading for a list if there is more than one list -->
+
+              <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+              <!--   * `cya-questions-short` for short questions -->
+              <!--   * `cya-questions-long` for long questions -->
+              <!--   * none for single group of q&a -->
+              
+              <dl class="govuk-check-your-answers cya-questions-short">
+                  <div>
+                      <dt class="cya-question">
+                        Mother's name
+                      </dt>
+                    <dd class="cya-answer">
+                      Sarah Phillips
+                    </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-apply#first-name">
+                            Change<span class="visually-hidden">Mother's name</span>
+                        </a>
+                      </dd>
+                  </div>
+                  <div>
+                      <dt class="cya-question cya-questions-long">
+                        Mother's phone number
+                      </dt>
+                    <dd class="cya-answer">
+                        012912121212
+                      </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-apply#ident-num">
+                            Change<span class="visually-hidden">mother's phone number</span>
+                        </a>
+                      </dd>
+                  </div>
+                  <div>
+                      <dt class="cya-question">
+                        Email address
+                      </dt>
+                    <dd class="cya-answer">
+                        yourname@example.com
+                      </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-apply#email-ad">
+                            Change<span class="visually-hidden"> Email address</span>
+                        </a>
+                      </dd>
+                  </div>
+             
+                  <div>
+                      <dt class="cya-question">
+                        Mother's date of birth
+                      </dt>
+                    <dd class="cya-answer">
+                        10 October 1980
+                      </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-apply#Telephone">
+                            Change<span class="visually-hidden">Mother's dob</span>
+                        </a>
+                      </dd>
+                  </div>
+                  <div>
+                      <dt class="cya-question cya-questions-long">
+                        Mother's NHS number
+                      </dt>
+                      <dd class="cya-answer">
+                        1111111111
+                      </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-apply#care">
+                          Change<span class="visually-hidden"> NHS number</span>
+                        </a>
+                      </dd>
+                  </div>
+                  <div>
+                      <dt class="cya-question cya-questions-long">
+                        Due date or baby's birth date
+                      </dt>
+                      <dd class="cya-answer">
+                        10 October 2018
+                      </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-apply#baby-date">
+                          Change<span class="visually-hidden"> due date or baby's birth date</span>
+                        </a>
+                      </dd>
+                  </div>
+                  <div>
+                      <dt class="cya-question cya-questions-long">
+                        Get details by email
+                      </dt>
+                      <dd class="cya-answer">
+                        Yes
+                      </dd>
+                      <dd class="cya-change">
+                        <a href="/common-pages/app-pages/mother-email#radio-inline-1">
+                          Change<span class="visually-hidden"> get details by email</span>
+                        </a>
+                      </dd>
+                  </div>
+                </dl> 
+                <!-- Do we need a declaration here ?! --> 
+                <br /><br/>
+                <div class="form-group">
+                  <a href="done" class="button">Submit</a>
+                </div>
+          </fieldset>
+        </form> 
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
