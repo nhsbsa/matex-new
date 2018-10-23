@@ -6,153 +6,152 @@
 
 {% block content %}
 
-<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
 <main id="content" role="main">
   <div class="phase-banner">
       <p>
         <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
       </p>
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="javascript:history.go(-1)" class="link-back">Back</a>
+      <span style="float:right; font-size:16px; margin-top: 30px;">
+        <span style="margin-right:10px;">Alice Aardvark (AAAA1111)</span>   <a href="/common-pages/start-v6">Sign out</a>   <span style="margin: 0px 10px;">|</span> <a href="#">Help</a>
+      </span> 
     </div>
-    <div class="grid-row">
-      <div class="column-full">
-        <a href="javascript:history.go(-1)" class="link-back">Back</a>
-        <span style="float:right; font-size:16px; margin-top: 30px;">
-          <span style="margin-right:10px;">Alice Aardvark (AAAA1111)</span>   <a href="/common-pages/start-v6" style="margin-right:10px;">Sign out</a>   |   <a href="#" style="margin-left:10px">Help</a>
-        </span> 
-      </div>
-    </div>
-    <div class="grid-row">
-      <div class="column-two-thirds">
-        <div class="form">
-          <form id="appform" role="form" method="post">
-            <fieldset>
-              <h1 class="heading-large">
-                <span class="heading-secondary">Apply for a maternity exemption certificate</span>
-                  Check your answers
-              </h1>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="form">
+        <form id="appform" role="form" method="post">
+          <fieldset>
+            <h1 class="heading-large">
+              <span class="heading-secondary">Apply for a maternity exemption certificate</span>
+                Check your answers
+            </h1>
 
-              <!-- only add a heading for a list if there is more than one list -->
+            <!-- only add a heading for a list if there is more than one list -->
 
-              <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
-              <!--   * `cya-questions-short` for short questions -->
-              <!--   * `cya-questions-long` for long questions -->
-              <!--   * none for single group of q&a -->
-              
-              <dl class="govuk-check-your-answers cya-questions-short">
-                  <div>
-                      <dt class="cya-question">
-                        Mother's name
-                      </dt>
-                    <dd class="cya-answer">
-                      Sarah Phillips
+            <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+            <!--   * `cya-questions-short` for short questions -->
+            <!--   * `cya-questions-long` for long questions -->
+            <!--   * none for single group of q&a -->
+            
+            <dl class="govuk-check-your-answers cya-questions-short">
+                <div>
+                    <dt class="cya-question">
+                      Mother's name
+                    </dt>
+                  <dd class="cya-answer">
+                    Sarah Phillips
+                  </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-apply#first-name">
+                          Change<span class="visually-hidden">Mother's name</span>
+                      </a>
                     </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-apply#first-name">
-                            Change<span class="visually-hidden">Mother's name</span>
-                        </a>
-                      </dd>
-                  </div>
-                  <div>
-                      <dt class="cya-question cya-questions-long">
-                        Mother's phone number
-                      </dt>
+                </div>
+                <div>
+                    <dt class="cya-question cya-questions-long">
+                      Mother's phone number
+                    </dt>
+                  <dd class="cya-answer">
+                      012912121212
+                    </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-apply#ident-number">
+                          Change<span class="visually-hidden">mother's phone number</span>
+                      </a>
+                    </dd>
+                </div>
+                <div>
+                    <dt class="cya-question">
+                      Email address
+                    </dt>
+                  <dd class="cya-answer">
+                      yourname@example.com
+                    </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-apply#email-ad">
+                          Change<span class="visually-hidden"> Email address</span>
+                      </a>
+                    </dd>
+                </div>
+           
+                <div>
+                    <dt class="cya-question">
+                      Mother's date of birth
+                    </dt>
+                  <dd class="cya-answer">
+                      10 October 1980
+                    </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-apply#Telephone">
+                          Change<span class="visually-hidden">Mother's dob</span>
+                      </a>
+                    </dd>
+                </div>
+                <div>
+                    <dt class="cya-question cya-questions-long">
+                      Mother's NHS number
+                    </dt>
                     <dd class="cya-answer">
-                        012912121212
-                      </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-apply#ident-number">
-                            Change<span class="visually-hidden">mother's phone number</span>
-                        </a>
-                      </dd>
-                  </div>
-                  <div>
-                      <dt class="cya-question">
-                        Email address
-                      </dt>
+                      1111111111
+                    </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-apply#care">
+                        Change<span class="visually-hidden"> NHS number</span>
+                      </a>
+                    </dd>
+                </div>
+                <div>
+                    <dt class="cya-question cya-questions-long">
+                      Due date or baby's birth date
+                    </dt>
                     <dd class="cya-answer">
-                        yourname@example.com
-                      </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-apply#email-ad">
-                            Change<span class="visually-hidden"> Email address</span>
-                        </a>
-                      </dd>
-                  </div>
-             
-                  <div>
-                      <dt class="cya-question">
-                        Mother's date of birth
-                      </dt>
+                      10 October 2018
+                    </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-apply#baby-date">
+                        Change<span class="visually-hidden"> due date or baby's birth date</span>
+                      </a>
+                    </dd>
+                </div>
+                <div>
+                    <dt class="cya-question cya-questions-long">
+                      Get details by email
+                    </dt>
                     <dd class="cya-answer">
-                        10 October 1980
-                      </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-apply#Telephone">
-                            Change<span class="visually-hidden">Mother's dob</span>
-                        </a>
-                      </dd>
-                  </div>
-                  <div>
-                      <dt class="cya-question cya-questions-long">
-                        Mother's NHS number
-                      </dt>
-                      <dd class="cya-answer">
-                        1111111111
-                      </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-apply#care">
-                          Change<span class="visually-hidden"> NHS number</span>
-                        </a>
-                      </dd>
-                  </div>
-                  <div>
-                      <dt class="cya-question cya-questions-long">
-                        Due date or baby's birth date
-                      </dt>
-                      <dd class="cya-answer">
-                        10 October 2018
-                      </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-apply#baby-date">
-                          Change<span class="visually-hidden"> due date or baby's birth date</span>
-                        </a>
-                      </dd>
-                  </div>
-                  <div>
-                      <dt class="cya-question cya-questions-long">
-                        Get details by email
-                      </dt>
-                      <dd class="cya-answer">
-                        Yes
-                      </dd>
-                      <dd class="cya-change">
-                        <a href="/common-pages/app-pages/mother-email#radio-inline-1">
-                          Change<span class="visually-hidden"> get details by email</span>
-                        </a>
-                      </dd>
-                  </div>
-                </dl> 
-                <h2 class="heading-large">Declaration</h2>
-                <div class="notice" style="position:relative">
-                  <i class="icon icon-important" style="margin-top:-230px;">
-                    <span class="visuallyhidden">Warning</span>
-                  </i>
-                  <span class="declaration" style="position: relative; display:block; padding-left:65px;">I, Alice Aardvark, confirm that on 23 October 2018 the information provided above is in accordance with the applicant's records and is correct. I confirm that on 23 October 2018 the applicant has consented to this application being commenced on her behalf, and to the information above being used by the NHS Business Services Authority to process her application for an exemption certificate (maternity).
-                  <br><br>    
-                  I also confirm that I have made the applicant aware that the relevant information from this form will be disclosed to and by the NHS Business Services Authority, the Department of Health, NHS England, NHS Protect, NHS Digital and bodies performing functions on their behalf, and to the extent the applicant needs to, the applicant has consented to this.
-                  <br><br>
-                  I also confirm that the applicant has consented to participate in a piloting of a digital application process for maternity exemption certificates, and consents to her data being used for the purposes of the evaluation of that pilot scheme.  
-                  </span>
-                </div>  
-                <br>
-                <div class="form-group">
-                  <a class="button" href="/common-pages/app-pages/mother-done" id="submit">Submit</a>
-                </div>  
-            </fieldset>
-          </form> 
-        </div>
+                      Yes
+                    </dd>
+                    <dd class="cya-change">
+                      <a href="/common-pages/app-pages/mother-email#radio-inline-1">
+                        Change<span class="visually-hidden"> get details by email</span>
+                      </a>
+                    </dd>
+                </div>
+              </dl> 
+              <h2 class="heading-large">Declaration</h2>
+              <div class="notice" style="position:relative">
+                <i class="icon icon-important" style="margin-top:-230px;">
+                  <span class="visuallyhidden">Warning</span>
+                </i>
+                <span class="declaration" style="position: relative; display:block; padding-left:65px;">I, Alice Aardvark, confirm that on 23 October 2018 the information provided above is in accordance with the applicant's records and is correct. I confirm that on 23 October 2018 the applicant has consented to this application being commenced on her behalf, and to the information above being used by the NHS Business Services Authority to process her application for an exemption certificate (maternity).
+                <br><br>    
+                I also confirm that I have made the applicant aware that the relevant information from this form will be disclosed to and by the NHS Business Services Authority, the Department of Health, NHS England, NHS Protect, NHS Digital and bodies performing functions on their behalf, and to the extent the applicant needs to, the applicant has consented to this.
+                <br><br>
+                I also confirm that the applicant has consented to participate in a piloting of a digital application process for maternity exemption certificates, and consents to her data being used for the purposes of the evaluation of that pilot scheme.  
+                </span>
+              </div>  
+              <br>
+              <div class="form-group">
+                <a class="button" href="/common-pages/app-pages/mother-done" id="submit">Submit</a>
+              </div>  
+          </fieldset>
+        </form> 
       </div>
     </div>
+  </div>
 </main>
 
 {% endblock %}
