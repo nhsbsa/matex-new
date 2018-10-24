@@ -35,7 +35,7 @@
 				        		<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
 					        	<label for="radio-inline-1">Email</label>
 					      	</div>
-					      	<div class="multiple-choice" onclick="showSign(); hideNew();">
+					      	<div class="multiple-choice" onclick="hideSign(); showNew();">
 					        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
 				        		<label for="radio-inline-2">Post</label>
 				      		</div>
@@ -67,7 +67,7 @@
 	function showNew() {
 		document.getElementById('new-account').style.display = 'block';
 	}
-</script>
+	</script>
 </main>
 
 {% endblock %}
