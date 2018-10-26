@@ -43,7 +43,7 @@
 					    	<label class="form-label" for="ident-number" id="ident-number-label">NMC or GMC number</label>
 					    	<input id="ident-number" class="form-control" max-length="30" autocomplete="off" aria-required="false">
 					    </div>
-					    <div class="form-group">
+					    <div class="form-group" onclick="showEmailDisplay()">
 					    	<label class="form-label" for="email-ad" id="email-ad-label">Email address</label>
 					    	<span class="form-hint">
 					    		Use your NHS email if you have one.
@@ -52,7 +52,7 @@
 					    	</span>
 					    	<input id="email-ad" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
 					    </div>
-					    <div class="form-group" id="email-display">
+					    <div class="form-group" id="email-display" style="display:none;">
 						    <div class="panel panel-border-wide">
 						    	<p><span class="form-hint">A confirmation email will be sent to:</span>
 							    	<span id="printemail" class="bold-small"></span>
@@ -72,14 +72,12 @@
 				<div class="form-group">
           			<a class="button" href="cya-account-v2" id="next">Continue</a>
         		</div> 
-        		<!-- <div class="form-group">
-        			<div onclick="printEmail()" id='printchatbox'>CHANGE ME</div>
-  					<input type='text' name='fname' id='chatinput'>
-        		</div>	 -->
-
 			</div>
  		</div>
  		<script>
+ 		function showEmailDisplay(){
+ 			document.getElementById('email-display').style.display = "block";
+ 		}
 
 		function printEmail() {
 			$('#email-ad').keyup(function(event) {
