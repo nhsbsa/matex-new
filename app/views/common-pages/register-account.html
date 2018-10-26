@@ -80,12 +80,14 @@
 			</div>
  		</div>
  		<script>
-		function printEmail () {
+
+		function printEmail() {
 			$('#chatinput').keyup(function(event) {
   			newText = event.target.value;
   			$('#printchatbox').text(newText);
 			});
 		} 
+		window.onload=printEmail;
 	</script>
 	<script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
 	
