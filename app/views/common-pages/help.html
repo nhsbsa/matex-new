@@ -1,0 +1,54 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHSBSA Prototype
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+<!-- v4 -->
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service<span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p> 
+  </div>
+ <div class="grid-row">
+      <div class="column-full">
+        <a href="javascript:history.go(-1)" class="link-back">Back</a> 
+      </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">
+        Help for healthcare professionals
+      </h1>
+      
+      <p>Contact us for help with:
+        <ul class="list list-bullet">
+          <li>Problems signing in</li>
+          <li>Lost digital certificates</li>
+          <li>Changing a mother's details</li>
+          <li>A digital certificate being refused as evidence</li>
+        </ul>
+      </p>
+      <p>
+        Email <a href="mailto:nhsbsa.matexdigitisationteam@nhs.net">nhsbsa.matexdigitisationteam@nhs.net</a>
+      </p>
+      <p>
+        Telephone: 0300 330 1341
+        <br>8am to 6pm Monday to Friday, 9am to 3pm on Saturday.
+      </p>  
+    </div>  
+  </div>
+</main>
+
+{% endblock %}
