@@ -1,0 +1,78 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Help paying for NHS Costs prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- TEST PAGE - CAN DELETE ALL THIS CONTENT -->
+<main id="content" role="main">
+	<div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
+      </p>
+  	</div>
+  	<div class="grid-row">
+    	<div class="column-full">
+      		<a href="javascript:history.go(-1)" class="link-back">Back</a>
+     		<span style="float:right; font-size:16px; margin-top: 30px;">
+        	
+      		</span> 
+    	</div>
+	</div>
+  	<div class="grid-row">
+  		<div class="column-two-thirds">
+  			<div class="form">
+		  		<h1 class="heading-large">
+					<span class="heading-secondary">Activate maternity exemption account</span>
+					What is your NMC or GMC number?
+			    </h1>
+
+			    <form id="appform" role="form" method="post">
+					<div class="form-group">
+						<fieldset class="inline">
+				    		<legend class="visually-hidden">What is your NMC or GMC number?</legend>
+                            
+
+				<input class="form-control" id="full-name-f1" type="text">
+
+					      	
+						</fieldset>
+					</div>
+					<div class="form-group">
+          				<a class="button" href="/common-pages/app-pages/apply-page" id="next">Continue</a>
+        			</div>  
+                    
+                    <details>
+
+  <summary><span class="summary">What is a NMC or GMC number?</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+    <p>
+     Nursing and Midwifery Council (NMC) or the General Medical Council (GMC)
+    </p>
+      
+  </div>
+
+</details>
+                            <br>
+				</form>
+			</div>		
+ 		</div>
+	</div>
+	<script>
+	function showDate() {
+		document.getElementById('date-you-met').style.display = "block";
+	}
+
+	function hideDate() {
+		document.getElementById('date-you-met').style.display = 'none';
+	}
+</script>
+</main>
+
+{% endblock %}
+
+
