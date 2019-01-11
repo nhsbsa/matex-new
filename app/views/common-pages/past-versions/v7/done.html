@@ -1,0 +1,57 @@
+{% extends "layout_bsa.html" %}
+ 
+{% block page_title %}
+  NHSBSA Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service 
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+      </p> 
+    </div>
+    <div class="grid-row">
+      <div class="column-full">
+        <a href="javascript:history.go(-1)" class="link-back">Back</a>
+          <span style="float:right; font-size:16px; margin-top: 30px;">
+            <a href="https://matex-new.herokuapp.com/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a>
+          </span> 
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <div class="done-panel">
+          <h1 class="heading-xlarge"><span id="done-tick"></span>Registration complete</h1>
+          <h2 class="heading-large"><span class="heading-secondary" style="color: white;">Account details will be sent to sam.smith@nhs.net within 5 days</span></h2>
+        </div>
+
+        <h2 class="heading-medium">What happens next</h2>
+          <p>To access your account click the link in the email once you receive it. </p>
+            
+            <p>This will allow you to apply for maternity exemption certificates on behalf of new and expectant mothers.</p>
+
+        <p>If you've finished reading this page you can close the window.</p>
+
+       <!--  <p>
+          <a class="button" href="/" role="button">Continue to sign in</a>
+        </p> -->
+<br>
+        <h3 class="heading-small">Before you go</h3>
+        <p>Help us to improve the service by <a href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&application=matex-hcp-app&version=0.1.1.46&ref=SktsKLVQ3AhCxtWV2HY-PMagdRy5eCIZGdRcL37ISW4" target="blank">answering some questions (link opens in a new window)</a> about it.</p>
+<br><br>
+        <div style="background-color:#dee0e2; padding:20px 40px;">
+          <h3 class="heading-small">PROTOTYPE ONLY</h3>
+          <p>Click <a href="/">here</a> to return to the index page.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+{% endblock %}
