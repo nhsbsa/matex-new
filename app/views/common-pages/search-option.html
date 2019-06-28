@@ -1,0 +1,124 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHSBSA Prototype
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+<!-- v4 -->
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service<span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p> 
+  </div>
+  <div class="grid-row">
+      <div class="column-full">
+        <span style="float:right; font-size:16px; margin-top: 30px;">
+            <a href="help" rel="noopener noreferrer">Help</a>
+      </span> 
+      </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <!-- Input with spy glass -->
+        <div class="currency-input form-group">
+            <div class="currency-input-inner">
+                <label for="keywords" class="form-label">Cartoon characters</label>
+                <span class="symbol">&#x1F50D;</span>
+                
+                <input class="currency-amount form-control" autocomplete="off" style="width:100%" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
+            </div>
+        </div>
+        <!-- /. -->
+
+        <!-- List of results -->
+        <ul id="service-list" class="nhsuk-list">
+            <li>
+                <div class="multiple-choice multiple-radio">
+                    <input id="bart" name="bart" type="checkbox" value="true">
+                    <label style="padding-bottom:16px;" for="bart">Bart Simpson</label>
+                </div>            
+            </li>
+            <li>
+                <div class="multiple-choice multiple-radio">
+                    <input id="donaldDuck" name="donaldDuck" type="checkbox" value="true">
+                    <label style="padding-bottom:16px;" for="donaldDuck">Donald Duck</label>
+                </div>          
+            </li>
+            <li>
+                <div class="multiple-choice multiple-radio">
+                    <input id="fry" name="fry" type="checkbox" value="true">
+                    <label style="padding-bottom:16px;" for="fry">Fry</label>
+                </div>            
+            </li>
+            <li>
+                <div class="multiple-choice multiple-radio">
+                    <input id="someOthers" name="someOthers" type="checkbox" value="true">
+                    <label style="padding-bottom:16px;" for="someOthers">Some others</label>
+                </div>            
+            </li>
+            </ul>
+        <!-- /. -->
+    </div>
+</main>
+
+<style>
+
+    /* spy glass in the input */
+    .currency-input-inner {
+        position: relative;
+    }
+    
+    span.symbol {
+        position: absolute;
+        bottom: 6px;
+        left: 10px;
+        font-weight: 800;
+        color: #0b0c0c;
+    }
+    
+    .currency-amount {
+        padding-left: 40px;
+    }
+    
+    @media all and (-ms-high-contrast: none) , ( -ms-high-contrast : active)
+        {
+        /* IE10+ CSS styles */
+        .currency-amount {
+            padding-bottom: 7px;
+        }
+    }
+</style>
+<script>
+function searchProjects() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('keywords');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("service-list");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("label")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+    } else {
+        li[i].style.display = "none";
+    }
+    }
+}
+    
+</script>
+
+{% endblock %}
