@@ -37,13 +37,13 @@
                 <label for="keywords" class="form-label">Cartoon characters</label>
                 <span class="symbol">&#x1F50D;</span>
                 
-                <input class="currency-amount form-control" autocomplete="off" style="width:100%" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
+                <input class="currency-amount form-control" autocomplete="off" style="width:92%;" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
             </div>
         </div>
         <!-- /. -->
 
         <!-- List of results -->
-        <ul id="service-list" class="nhsuk-list">
+        <ul id="service-list" class="scroll-box nhsuk-list">
             <li>
                 <div class="multiple-choice multiple-radio">
                     <input id="bart" name="bart" type="checkbox" value="true">
@@ -68,13 +68,57 @@
                     <label style="padding-bottom:16px;" for="someOthers">Some others</label>
                 </div>            
             </li>
-            </ul>
+            <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list5" name="list5" type="checkbox" value="true">
+                        <label style="padding-bottom:16px;" for="list5">wwwwwwwwwww</label>
+                    </div>            
+                </li>
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list6" name="list6" type="checkbox" value="true">
+                        <label style="padding-bottom:16px;" for="list6">xxxxxxxxxxx</label>
+                    </div>          
+                </li>
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list7" name="list7" type="checkbox" value="true">
+                        <label style="padding-bottom:16px;" for="list7">yyyyyyyy</label>
+                    </div>            
+                </li>
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list8" name="list8" type="checkbox" value="true">
+                        <label style="padding-bottom:16px;" for="list8">zzzzz</label>
+                    </div>            
+                </li>
+        </ul>
         <!-- /. -->
     </div>
 </main>
 
 <style>
+    /* scroll box */
+    ul.scroll-box  {
+    height:160px;
+    width:100%;
+    overflow:hidden;
+    overflow-y:scroll;
+    margin-top:-20px;
+    }
 
+
+ @media only screen and (max-width:767px) {
+    ul.scroll-box  {
+    height:100px;
+    width:102%;
+    overflow:hidden;
+    overflow-y:scroll;
+    margin-top:-10px;
+    }
+}
+
+    
     /* spy glass in the input */
     .currency-input-inner {
         position: relative;
