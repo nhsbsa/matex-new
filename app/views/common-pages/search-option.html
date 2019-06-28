@@ -38,7 +38,7 @@
                     <span id="y"></span>
                     <!-- <span class="symbol">&#x1F50D;</span> -->
                     <span class="glass symbol">&#9906;</span>
-                    <input class="currency-amount form-control" autocomplete="off" style="width:92%;" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
+                    <input class="search-control currency-amount form-control" autocomplete="off" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
                 </div>
             </div>
             <!-- /. -->
@@ -132,14 +132,22 @@
         margin-top:-20px;
     }
 
+    .search-control {
+        width: 92%;
+    }
+
     @media only screen and (max-width:767px) {
         ul.scroll-box  {
             height:100px;
-            width:102%;
+            width:100%;
             margin-top:-10px;
         }
-    }
 
+        .search-control {
+            width: 88%;
+        }
+    }
+    
     .frame::-webkit-scrollbar {
         -webkit-appearance: none;
     }
@@ -159,7 +167,6 @@
     }
 
     /* spy glass in the input */
-
     .glass {
         -webkit-transform: rotate(-45deg); 
         -moz-transform: rotate(-45deg); 
@@ -183,6 +190,10 @@
         padding-left: 40px;
     }
     
+    .multiple-radio label {
+        margin-left: 40px !important;
+    }
+
     @media all and (-ms-high-contrast: none) , ( -ms-high-contrast : active) {
         /* IE10+ CSS styles */
         .currency-amount {
