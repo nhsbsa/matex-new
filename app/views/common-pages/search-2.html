@@ -31,71 +31,70 @@
   <div class="grid-row">
     <div class="column-two-thirds">
         <div class="search-wrapper">
-            <label id="input-label" for="keywords" class="label-space form-label-bold">Cartoon characters</label>
-            <div id="count"></div>
-            <div class="search-body">
-                <!-- Input with spy glass -->
-                <div class="color-spacing form-group">
-                    <div class="input-glyph-inner">
-                        <span class="glass symbol">&#9906;</span>
-                        <input class="search-control input-glyph form-control" autocomplete="off" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
-                    </div>
+            <!-- Input with spy glass -->
+            <div class="color-spacing currency-input form-group">
+                <div class="currency-input-inner">
+                    <label for="keywords" class="label-color form-label">Cartoon characters</label>
+                    <span id="count"></span>
+                    <!-- <span class="symbol">&#x1F50D;</span> -->
+                    <span class="glass symbol">&#9906;</span>
+                    <input class="search-control currency-amount form-control" autocomplete="off" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
                 </div>
-                <!-- /. -->
+            </div>
+            <!-- /. -->
 
-                <!-- List of results -->
-                <ul id="service-list" class="frame scroll-box">
-                    <li>
+            <!-- List of results -->
+            <ul id="service-list" class="frame scroll-box">
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list1" name="list1" class="list-input" type="checkbox" value="true" onclick="updateCount()">
+                        <label class="check-label" for="list1">Bart Simpson</label>
+                    </div>            
+                </li>
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list2" name="list2" class="list-input" type="checkbox" value="true" onclick="updateCount()">
+                        <label class="check-label" for="list2">Donald Duck</label>
+                    </div>          
+                </li>
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list3" name="list3" class="list-input" type="checkbox" value="true" onclick="updateCount()">
+                        <label class="check-label" for="list3">Fry</label>
+                    </div>            
+                </li>
+                <li>
+                    <div class="multiple-choice multiple-radio">
+                        <input id="list4" class="list-input" name="list4" type="checkbox" value="true" onclick="updateCount()">
+                        <label class="check-label" for="list4">Some others</label>
+                    </div>            
+                </li>
+                <li>
                         <div class="multiple-choice multiple-radio">
-                            <input id="list1" name="list1" class="list-input" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list1">Bart Simpson</label>
+                            <input id="list5" class="list-input" name="list5" type="checkbox" value="true" onclick="updateCount()">
+                            <label class="check-label" for="list5">wwwwwwwwwww</label>
                         </div>            
                     </li>
                     <li>
                         <div class="multiple-choice multiple-radio">
-                            <input id="list2" name="list2" class="list-input" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list2">Donald Duck</label>
+                            <input id="list6" class="list-input" name="list6" type="checkbox" value="true" onclick="updateCount()">
+                            <label class="check-label" for="list6">xxxxxxxxxxx</label>
                         </div>          
                     </li>
                     <li>
                         <div class="multiple-choice multiple-radio">
-                            <input id="list3" name="list3" class="list-input" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list3">Fry</label>
+                            <input id="list7" class="list-input" name="list7" type="checkbox" value="true" onclick="updateCount()">
+                            <label class="check-label" for="list7">yyyyyyyy</label>
                         </div>            
                     </li>
                     <li>
                         <div class="multiple-choice multiple-radio">
-                            <input id="list4" class="list-input" name="list4" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list4">Some others</label>
+                            <input id="list8" class="list-input" name="list8" type="checkbox" value="true" onclick="updateCount()">
+                            <label class="check-label" for="list8">zzzzz</label>
                         </div>            
                     </li>
-                    <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list5" class="list-input" name="list5" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list5">wwwwwwwwwww</label>
-                            </div>            
-                        </li>
-                        <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list6" class="list-input" name="list6" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list6">xxxxxxxxxxx</label>
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list7" class="list-input" name="list7" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list7">yyyyyyyy</label>
-                            </div>            
-                        </li>
-                        <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list8" class="list-input" name="list8" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list8">zzzzz</label>
-                            </div>            
-                        </li>
-                </ul>
-                <!-- /. -->
-            </div>
+            </ul>
+            <!-- /. -->
         </div>
     </div>
 </main>
@@ -106,17 +105,13 @@
         background-color: white;
     }
 
-    .search-body {
-        background-color: #FFF;
-    }
-
     .search-wrapper {
-        background-color: #DEE0E2; 
-        border: 5px solid #DEE0E2;
+        padding: 0px 5px 5px 5px;
+        background-color: #DEE0E2;
     }
 
-    .label-space, #count {
-        padding: 0px 0px 10px 10px;
+    .label-color {
+        background-color: #DEE0E2;
     }
 
     .color-spacing {
@@ -178,8 +173,7 @@
         transform: rotate(-45deg);
         font-size:30px;
     }
-
-    .input-glyph-inner {
+    .currency-input-inner {
         position: relative;
     }
     
@@ -191,7 +185,7 @@
         color: #333333;
     }
     
-    .input-glyph {
+    .currency-amount {
         padding-left: 40px;
     }
     
@@ -201,7 +195,7 @@
 
     @media all and (-ms-high-contrast: none) , ( -ms-high-contrast : active) {
         /* IE10+ CSS styles */
-        .input-glyph {
+        .currency-amount {
             padding-bottom: 3px; /* 7px for the other symbol */
         }
     }
@@ -233,8 +227,8 @@ function searchProjects() {
 <script>
 /* Counts checked checkboxes */
 window.updateCount = function() {
-    var count = $(".list-input:checked").length;
-    document.getElementById("count").innerHTML = count + ' selected';
+    var x = $(".list-input:checked").length;
+    document.getElementById("count").innerHTML = x + ' selected';
 };
 </script>
 
