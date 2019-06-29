@@ -30,73 +30,82 @@
   </div>
   <div class="grid-row">
     <div class="column-two-thirds">
+        <!-- Search box -->
         <div class="search-wrapper">
-            <label id="input-label" for="keywords" class="label-space form-label-bold">Cartoon characters</label>
-            <div id="count"></div>
-            <div class="search-body">
-                <!-- Input with spy glass -->
-                <div class="color-spacing form-group">
-                    <div class="input-glyph-inner">
-                        <span class="glass symbol">&#9906;</span>
-                        <input class="search-control input-glyph form-control" autocomplete="off" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
+            <fieldset>
+                <legend>
+                    <label id="input-label" for="keywords" class="label-space form-label-bold">Cartoon characters</label>
+                </legend>
+                <div id="count"></div>
+                <div class="search-body">
+                    <!-- Input with spy glass -->
+                    <div class="color-spacing form-group">
+                        <div class="input-glyph-inner">
+                            <span class="glass symbol">&#9906;</span>
+                            <input class="search-control input-glyph form-control" autocomplete="off" id="keywords" name="keywords" type="text" onkeyup="searchProjects()">
+                        </div>
                     </div>
-                </div>
-                <!-- /. -->
+                    <!-- /. -->
 
-                <!-- List of results -->
-                <ul id="service-list" class="frame scroll-box">
-                    <li>
-                        <div class="multiple-choice multiple-radio">
-                            <input id="list1" name="list1" class="list-input" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list1">Bart Simpson</label>
-                        </div>            
-                    </li>
-                    <li>
-                        <div class="multiple-choice multiple-radio">
-                            <input id="list2" name="list2" class="list-input" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list2">Donald Duck</label>
-                        </div>          
-                    </li>
-                    <li>
-                        <div class="multiple-choice multiple-radio">
-                            <input id="list3" name="list3" class="list-input" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list3">Fry</label>
-                        </div>            
-                    </li>
-                    <li>
-                        <div class="multiple-choice multiple-radio">
-                            <input id="list4" class="list-input" name="list4" type="checkbox" value="true" onclick="updateCount()">
-                            <label class="check-label" for="list4">Some others</label>
-                        </div>            
-                    </li>
-                    <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list5" class="list-input" name="list5" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list5">wwwwwwwwwww</label>
-                            </div>            
-                        </li>
-                        <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list6" class="list-input" name="list6" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list6">xxxxxxxxxxx</label>
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list7" class="list-input" name="list7" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list7">yyyyyyyy</label>
-                            </div>            
-                        </li>
-                        <li>
-                            <div class="multiple-choice multiple-radio">
-                                <input id="list8" class="list-input" name="list8" type="checkbox" value="true" onclick="updateCount()">
-                                <label class="check-label" for="list8">zzzzz</label>
-                            </div>            
-                        </li>
-                </ul>
-                <!-- /. -->
-            </div>
+                    <!-- List of results -->
+                    <fieldset>
+                        <legend class="visuallyhidden">Checkbox inputs</legend>
+                        <ul id="service-list" class="frame scroll-box">
+                            <li>
+                                <div class="multiple-choice multiple-radio">
+                                    <input id="list1" name="list1" class="list-input" type="checkbox" value="true" onclick="updateCount()">
+                                    <label class="check-label" for="list1">Bart Simpson</label>
+                                </div>            
+                            </li>
+                            <li>
+                                <div class="multiple-choice multiple-radio">
+                                    <input id="list2" name="list2" class="list-input" type="checkbox" value="true" onclick="updateCount()">
+                                    <label class="check-label" for="list2">Donald Duck</label>
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="multiple-choice multiple-radio">
+                                    <input id="list3" name="list3" class="list-input" type="checkbox" value="true" onclick="updateCount()">
+                                    <label class="check-label" for="list3">Fry</label>
+                                </div>            
+                            </li>
+                            <li>
+                                <div class="multiple-choice multiple-radio">
+                                    <input id="list4" class="list-input" name="list4" type="checkbox" value="true" onclick="updateCount()">
+                                    <label class="check-label" for="list4">Some others</label>
+                                </div>            
+                            </li>
+                            <li>
+                                    <div class="multiple-choice multiple-radio">
+                                        <input id="list5" class="list-input" name="list5" type="checkbox" value="true" onclick="updateCount()">
+                                        <label class="check-label" for="list5">wwwwwwwwwww</label>
+                                    </div>            
+                                </li>
+                                <li>
+                                    <div class="multiple-choice multiple-radio">
+                                        <input id="list6" class="list-input" name="list6" type="checkbox" value="true" onclick="updateCount()">
+                                        <label class="check-label" for="list6">xxxxxxxxxxx</label>
+                                    </div>          
+                                </li>
+                                <li>
+                                    <div class="multiple-choice multiple-radio">
+                                        <input id="list7" class="list-input" name="list7" type="checkbox" value="true" onclick="updateCount()">
+                                        <label class="check-label" for="list7">yyyyyyyy</label>
+                                    </div>            
+                                </li>
+                                <li>
+                                    <div class="multiple-choice multiple-radio">
+                                        <input id="list8" class="list-input" name="list8" type="checkbox" value="true" onclick="updateCount()">
+                                        <label class="check-label" for="list8">zzzzz</label>
+                                    </div>            
+                                </li>
+                        </ul>
+                    </fieldset>
+                    <!-- /. -->
+                </div>
+            </fieldset>
         </div>
+        <!-- /. -->
     </div>
 </main>
 
