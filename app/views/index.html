@@ -7,161 +7,184 @@
 {% block content %}
 
 <main id="content" role="main">
+	<div class="grid-row">
+    	<div class="column-full">
+			<h1 class="heading-xlarge">
+				<span class="heading-secondary">Apply for a maternity exemption certificate</span>
+				Prototype
+			</h1>
+			<div id="azure-login">
+				<h2 class="heading-medium">Azure login</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Journey</th>
+							<th>Link</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>-</td>
+							<td><a target="_blank" href="https://bsa2468.atlassian.net/wiki/spaces/MATEX/pages/1287979085/Process+Flow+-+Revised+Prototype">Process Flow</a></td>
+							<td>Flow chart of the different journeys - Confluence</td>
+						</tr>
+						<tr>
+							<td>A</td>
+							<td><a href="common-pages/start-logged-in">Start v9</a></td>
+							<td>Already logged in with NHSmail</td>
+						</tr>
+						<tr>
+							<td>B</td>
+							<td><a href="common-pages/no-nhs-mail">Register</a></td>
+							<td>No account - link to the register page</td>
+						</tr>
+						<tr>
+							<td>C1</td>
+							<td><a href="common-pages/start-v9">Start v9</a></td>
+							<td>NHSmail & Matex user - first time login</td>
+						</tr>  
+						<tr>
+							<td>D</td>
+							<td><a href="common-pages/start-no-matex">Start v9</a></td>
+							<td>Not a Matex user</td>
+						</tr> 
+						<tr>
+							<td>E</td>
+							<td><a href="common-pages/start-error">Start v9</a></td>
+							<td>Not known in Azure</td>
+						</tr>
+						<tr>
+							<td>F</td>
+							<td><a href="common-pages/start-unrecognised">Start v9</a></td>
+							<td>Login with unrecognised domain email</td>
+						</tr> 
+						<tr>
+							<td>G</td>
+							<td><a href="common-pages/matex-down">Start v9</a></td>
+							<td>Service unavailable</td>
+						</tr> 
+					</tbody>
+				</table>
+				<details style="margin-top:30px;">
+					<summary>
+						<span class="summary">Previous versions</span>
+					</summary>
+					<div class="panel panel-border-narrow">
+						<h2 class="heading-medium">Previous versions</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Last updated</th>
+									<th>Link</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>12/09/2018</td>
+									<td><a href="common-pages/past-versions/v4/start-v4">Start page v4</a></td>
+									<td>Updated to include register link</td>
+								</tr> 
+								<tr>
+									<td>26/09/2018</td>
+									<td><a href="common-pages/past-versions/v5/start-v5">Start page v5</a></td>
+									<td>Update after meeting</td>
+								</tr>
+								<tr>
+									<td>04/10/2018</td>
+									<td><a href="common-pages/start-v6">Start page v6</a></td>
+									<td>Update after show and tell</td>
+								</tr>
+								<tr>
+									<td>04/01/2019</td>
+									<td><a href="common-pages/start-v7">Start page v7</a></td>
+									<td>Manual registration</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</details>	
+			</div>
+			<div id="self-reg">
+				<h2 class="heading-medium">Self registration</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Journey</th>
+							<th>Link</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>No account</td>
+							<td><a href="/common-pages/reg-pages/register">Form page</a></td>
+							<td>Registration form</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-  <div class="grid-row">
-    <div class="column-full">
-      <h1 class="heading-xlarge">
-        <span class="heading-secondary">Apply for a maternity exemption certificate</span>
-        Prototype
-      </h1>
-      <p></p>
-        <table>
-        <thead>
-          <tr>
-            <th>Journey</th>
-            <th>Link</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-            <td>-</td>
-            <td><a target="_blank" href="https://bsa2468.atlassian.net/wiki/spaces/MATEX/pages/1287979085/Process+Flow+-+Revised+Prototype">Process Flow</a></td>
-            <td>Flow chart of the different journeys - Confluence</td>
-          </tr>
-          <tr>
-            <td>A</td>
-            <td><a href="common-pages/start-logged-in">Start v9</a></td>
-            <td>Already logged in with NHSmail</td>
-          </tr>
-          <tr>
-            <td>B</td>
-            <td><a href="common-pages/no-nhs-mail">Register</a></td>
-            <td>No account - link to the register page</td>
-          </tr>
-          <tr>
-            <td>C1</td>
-            <td><a href="common-pages/start-v9">Start v9</a></td>
-            <td>NHSmail & Matex user - first time login</td>
-          </tr>  
-          <tr>
-            <td>D</td>
-            <td><a href="common-pages/start-no-matex">Start v9</a></td>
-            <td>Not a Matex user</td>
-          </tr> 
-          <tr>
-            <td>E</td>
-            <td><a href="common-pages/start-error">Start v9</a></td>
-            <td>Not known in Azure</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td><a href="common-pages/start-unrecognised">Start v9</a></td>
-            <td>Login with unrecognised domain email</td>
-          </tr> 
-          <tr>
-            <td>G</td>
-            <td><a href="common-pages/matex-down">Start v9</a></td>
-            <td>Service unavailable</td>
-          </tr> 
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <details>
-        <summary>
-          <span class="summary">Previous versions</span>
-        </summary>
-        <div class="panel panel-border-narrow">
-          <h2 class="heading-medium">Previous versions</h2>
-            <!--<table>
-              <thead>
-                <tr>
-                  <th>Last updated</th>
-                  <th>Link</th>
-                  <th>NHS email</th>
-                  <th>Email detected</th>
-                  <th>Logged in</th>
-                  <th>Matex</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>07/02/2019</td>
-                  <td><a href="common-pages/start-v8">Open</a></td>
-                  <td>Yes & no</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>Yes & no</td>
-              </tr>
-              <tr>
-                <td>07/02/2019</td>
-                <td><a href="common-pages/sign-in-auth">Open</a></td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>No</td>
-                <td>Yes</td>
-              </tr>
-              <tr>
-                <td>07/02/2019</td>
-                <td><a href="common-pages/app-pages/firstlogin">Open</a></td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes</td>
-              </tr>
-              <tr>
-                <td>07/02/2019</td>
-                <td><a href="common-pages/sign-in-auth-no-matex">Open</a></td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>No</td>
-                <td>No</td>
-              </tr>
-              <tr>
-                <td>07/02/2019</td>
-                <td><a href="/common-pages/register-account-paper">Open</a></td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>No</td>
-              </tr>
-            </tbody>
-          </table>
-          <br><br>-->
-          <table>
-            <thead>
-              <tr>
-                <th>Last updated</th>
-                <th>Link</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>12/09/2018</td>
-                <td><a href="common-pages/past-versions/v4/start-v4">Start page v4</a></td>
-                <td>Updated to include register link</td>
-              </tr> 
-              <tr>
-                <td>26/09/2018</td>
-                <td><a href="common-pages/past-versions/v5/start-v5">Start page v5</a></td>
-                <td>Update after meeting</td>
-              </tr>
-              <tr>
-                <td>04/10/2018</td>
-                <td><a href="common-pages/start-v6">Start page v6</a></td>
-                <td>Update after show and tell</td>
-              </tr>
-              <tr>
-                <td>04/01/2019</td>
-                <td><a href="common-pages/start-v7">Start page v7</a></td>
-                <td>Manual registration</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+			<!-- <div id="prev-pages">
+					<h2 class="heading-medium">Previous Pages</h2>
+					<table>
+						<thead>
+							<tr>
+							<th>Last updated</th>
+							<th>Link</th>
+							<th>NHS email</th>
+							<th>Email detected</th>
+							<th>Logged in</th>
+							<th>Matex</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>07/02/2019</td>
+								<td><a href="common-pages/start-v8">Open</a></td>
+								<td>Yes & no</td>
+								<td>No</td>
+								<td>No</td>
+								<td>Yes & no</td>
+							</tr>
+							<tr>
+								<td>07/02/2019</td>
+								<td><a href="common-pages/sign-in-auth">Open</a></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>No</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>07/02/2019</td>
+								<td><a href="common-pages/app-pages/firstlogin">Open</a></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>07/02/2019</td>
+								<td><a href="common-pages/sign-in-auth-no-matex">Open</a></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>No</td>
+								<td>No</td>
+							</tr>
+							<tr>
+								<td>07/02/2019</td>
+								<td><a href="/common-pages/register-account-paper">Open</a></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>No</td>
+							</tr>
+						</tbody>
+					</table>
+			</div> -->
+		</div>
+	</div>	
  </main>
 
 {% endblock %}

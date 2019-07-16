@@ -38,11 +38,19 @@
 					     <div class="form-group">
 					    	<label class="form-label" for="last-name" id="last-name-label">Last name</label>
 					    	<input id="last-name" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="care" id="care-label">Primary Care organisation</label>
+							<input id="care" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
+						</div>
 						<div class="form-group">
 					    	<label class="form-label" for="ident-number" id="ident-number-label">NMC or GMC number</label>
 					    	<input id="ident-number" class="form-control" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="Telephone" id="first-name-label">UK telephone number</label>
+							<input id="Telephone" class="form-control" type="tel" max-length="30" autocomplete="off" aria-required="false">
+						</div>
 					    <div class="form-group" onclick="showEmailDisplay()">
 					    	<label class="form-label" for="email-ad" id="email-ad-label">Email address</label>
 					    	<span class="form-hint">
@@ -51,26 +59,19 @@
 					    		We'll use this to create your account.
 					    	</span>
 					    	<input id="email-ad" class="form-control" type="text" max-length="200" autocomplete="off" aria-required="false">
-					    </div>
+						</div>
 					    <div class="form-group" id="email-display" style="display:none;">
 						    <div class="panel panel-border-wide">
-						    	<p><span class="form-hint">A link to the service will be sent here:</span>
+						    	<p>
+									<span class="form-hint">A link to the service will be sent here:</span>
 							    	<span id="printemail" class="bold-medium"></span>
 						    	</p>
 						    </div>
 						</div>    	
-					    <div class="form-group">
-					    	<label class="form-label" for="Telephone" id="first-name-label">UK telephone number</label>
-					    	<input id="Telephone" class="form-control" type="tel" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
-			    		<div class="form-group">
-					    	<label class="form-label" for="care" id="care-label">Primary Care organisation</label>
-					    	<input id="care" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
-					    </div>	
             		</fieldset>
 				</form>	
 				<div class="form-group">
-          			<a class="button" href="cya-account-v2" id="next">Continue</a>
+          			<a class="button" href="/common-pages/reg-pages/cya-account-v2" id="next">Continue</a>
         		</div> 
 			</div>
  		</div>
