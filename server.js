@@ -19,6 +19,8 @@ var packageJson = require('./package.json')
 var releaseVersion = packageJson.version
 var username = process.env.USERNAME
 var password = process.env.PASSWORD
+var proto_username = process.env.USERNAME
+var proto_password = process.env.PASSWORD
 var env = process.env.NODE_ENV || 'development'
 var useAuth = process.env.USE_AUTH || config.useAuth
 var useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreData
@@ -54,7 +56,7 @@ if (isSecure) {
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
 if (env === 'production' && useAuth === 'true') {
- app.use(utils.basicAuth(username, password))
+ app.use(utils.basicAuth(username, password, proto_username, proto_password))
 }
 
 // Set up App
